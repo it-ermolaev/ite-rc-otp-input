@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "composite": true,
-    "tsBuildInfoFile": "./node_modules/.tmp/demo.tsbuildinfo"
+    "tsBuildInfoFile": "./node_modules/.tmp/library.tsbuildinfo"
   },
   "extends": [
     "@repo/typescript-config/client.json",

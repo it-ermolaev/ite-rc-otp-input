@@ -1,4 +1,4 @@
-import OtpInput from "@repo/lib/src/index";
+import OtpInput from "@repo/library/src/index";
 
 function App() {
   return (

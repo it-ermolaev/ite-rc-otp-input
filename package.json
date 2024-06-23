@@ -12,10 +12,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "enquirer": "^2.4.1",
-    "listr2": "^8.2.3",
-    "turbo": "^2.0.4",
-    "typescript": "^5.5.2"
+    "enquirer": "2.4.1",
+    "listr2": "8.2.3",
+    "turbo": "2.0.4",
+    "typescript": "5.4.5"
   },
   "engines": {
     "node": ">=18"

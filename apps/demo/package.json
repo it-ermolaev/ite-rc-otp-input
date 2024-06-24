@@ -16,13 +16,14 @@
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
-    "@repo/typescript-config": "*",
     "@repo/library": "*",
     "@types/react": "18.3.3",
+    "@repo/typescript-config": "*",
+    "@repo/lint-staged": "*",
     "@types/react-dom": "18.3.0",
-    "@vitejs/plugin-react": "4.3.1",
     "vite": "5.3.1",
     "typescript": "5.4.5",
+    "@vitejs/plugin-react": "4.3.1",
     "eslint": "8.57.0"
   }
 }

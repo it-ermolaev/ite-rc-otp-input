@@ -1,4 +1,8 @@
 {
   "name": "@repo/lint-staged",
-  "private": true
+  "private": true,
+  "files": [
+    "base.js",
+    "client.js"
+  ]
 }

@@ -2,31 +2,31 @@
   "name": "ite-rc-otp-input",
   "version": "1.0.0",
   "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
-    "lint": "turbo lint",
-    "prepare": "node scripts/setup.mjs",
-    "pre-commit": "lint-staged"
+    "lint": "turbo lint --env-mode=loose",
+    "pre-commit": "lint-staged",
+    "prepare": "node scripts/setup.mjs"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "@repo/lint-staged": "*",
     "enquirer": "2.4.1",
     "husky": "9.0.11",
+    "@repo/lint-staged": "*",
     "lint-staged": "15.2.7",
     "listr2": "8.2.3",
     "turbo": "2.0.4",
     "typescript": "5.4.5"
   },
+  "packageManager": "npm@10.2.4",
   "engines": {
     "node": ">=18"
-  },
-  "packageManager": "npm@10.2.4",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+  }
 }

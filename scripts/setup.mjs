@@ -1,3 +1,4 @@
+import husky from "husky";
 import { Listr, delay } from "listr2";
 import enquirer from "enquirer";
 import { exec } from "child_process";
@@ -18,9 +19,25 @@ function execAsync(command) {
   });
 }
 
+function logSilent(fn) {
+  const originalLog = console.log;
+  console.log = () => {};
+
+  fn();
+
+  console.log = originalLog;
+}
+
 async function runTasks() {
   try {
     const tasks = new Listr([
+      {
+        title: "Install husky",
+        task: async () => {
+          await delay(1000);
+          logSilent(husky);
+        },
+      },
       {
         title: "Install turbo",
         task: async () => {
@@ -56,7 +73,7 @@ async function runTasks() {
 if (process.env.NODE_ENV !== "production") {
   const prompt = new enquirer.Confirm({
     name: "question",
-    message: "Want to setup?\n\n- turbo\n- disable telemetry (turbo)\n",
+    message: "Want to setup?\n\n- husky\n- turbo\n- disable turbo telemetry\n",
   });
 
   const canceledText = "\nYou canceled the installation.";

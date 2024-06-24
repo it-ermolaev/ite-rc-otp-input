@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc -b && vite build",
+    "check-types": "tsc -p tsconfig.json --noEmit",
     "dev": "vite build --watch",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "npm run lint -- --fix"
@@ -15,13 +16,15 @@
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
-    "@repo/lint-staged": "*",
+    "@repo/lint-staged-config": "*",
+    "@repo/prettier-config": "*",
     "@repo/typescript-config": "*",
     "@types/node": "20.14.8",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
     "@vitejs/plugin-react": "4.3.1",
     "eslint": "8.57.0",
+    "prettier": "3.3.2",
     "typescript": "5.4.5",
     "vite": "5.3.1",
     "vite-plugin-dts": "3.9.1"

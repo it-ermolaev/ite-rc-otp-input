@@ -1,11 +1,11 @@
-import OtpInput from "@repo/library/src/index";
+import OtpInput from '@repo/library/src/index'
 
 function App() {
   return (
     <>
       Hello world <OtpInput />
     </>
-  );
+  )
 }
 
-export default App;
+export default App

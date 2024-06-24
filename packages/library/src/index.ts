@@ -1,1 +1,1 @@
-export { default } from "./otp-input";
+export { default } from './otp-input'

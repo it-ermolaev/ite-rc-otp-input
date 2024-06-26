@@ -39,6 +39,13 @@ async function runTasks() {
         },
       },
       {
+        title: 'Install commitizen',
+        task: async () => {
+          await delay(1000)
+          await execAsync('npm install -g commitizen')
+        },
+      },
+      {
         title: "Install turbo",
         task: async () => {
           await delay(1000);
@@ -65,6 +72,7 @@ async function runTasks() {
     ]);
 
     await tasks.run();
+    console.log(`\n💡 Use ${color.green('git cz')} instead of ${color.red('git commit')}`)
   } catch (err) {
     console.error("Project setup error: ", err);
   }
@@ -73,7 +81,7 @@ async function runTasks() {
 if (process.env.NODE_ENV !== "production") {
   const prompt = new enquirer.Confirm({
     name: "question",
-    message: "Want to setup?\n\n- husky\n- turbo\n- disable turbo telemetry\n",
+    message: 'Want to setup?\n\n- husky\n- commitizen\n- turbo\n- nest cli\n- disable telemetry (turbo, next)\n',
   });
 
   const canceledText = "\nYou canceled the installation.";

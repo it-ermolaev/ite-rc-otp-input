@@ -1,8 +1,9 @@
 {
   "name": "@repo/lint-staged-config",
   "private": true,
-  "files": [
-    "base.js",
-    "app.js"
-  ]
+  "type": "module",
+  "exports": {
+    "./base": "./base.js",
+    "./react": "./react.js"
+  }
 }

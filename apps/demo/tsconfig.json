@@ -1,11 +1,7 @@
 {
-  "compilerOptions": {
-    "composite": true,
-    "tsBuildInfoFile": "./node_modules/.tmp/demo.tsbuildinfo"
-  },
-  "extends": [
-    "@repo/typescript-config/client.json",
-    "@repo/typescript-config/node.json"
-  ],
-  "include": ["src", "vite.config.ts"]
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
 }

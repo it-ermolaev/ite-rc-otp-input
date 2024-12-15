@@ -1,4 +1,6 @@
 {
   "name": "@repo/prettier-config",
-  "private": true
+  "private": true,
+  "type": "module",
+  "main": "index.js"
 }

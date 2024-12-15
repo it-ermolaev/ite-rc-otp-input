@@ -1,0 +1,59 @@
+{
+  "name": "@repo/ite-rc-otp-input",
+  "version": "1.0.0",
+  "description": "React component for entering a one-time password",
+  "keywords": [
+    "component",
+    "components",
+    "frontend",
+    "input",
+    "ite-rc-otp-input",
+    "otp-input",
+    "react",
+    "react-component",
+    "ui",
+    "ui-component"
+  ],
+  "homepage": "https://github.com/it-ermolaev/ite-rc-otp-input#readme",
+  "bugs": {
+    "url": "https://github.com/it-ermolaev/ite-rc-otp-input/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/it-ermolaev/ite-rc-otp-input"
+  },
+  "license": "MIT",
+  "author": "Sergei Ermolaev <it.ermolaev@gmail.com> (https://it-ermolaev.ru)",
+  "type": "module",
+  "main": "dist/otp-input.cjs.js",
+  "module": "dist/otp-input.esm.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -b && vite build",
+    "check-types": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/lint-staged-config": "*",
+    "@repo/prettier-config": "*",
+    "@repo/typescript-config": "*",
+    "@types/react": "16.8.0",
+    "@types/react-dom": "16.8.0",
+    "@vitejs/plugin-react": "4.3.4",
+    "eslint": "9.15.0",
+    "prettier": "3.4.2",
+    "react": "16.8.0",
+    "react-dom": "16.8.0",
+    "typescript": "~5.6.2",
+    "vite": "6.0.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  }
+}
